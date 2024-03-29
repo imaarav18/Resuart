@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   /* background-color: skyblue;*/
+}
+#logo{
+     margin-top:8px ;
+    margin-left: 10%;
+}
+#logo img{
+    height:50px;
+}
+#nav-bar{
+    display: flex;
+font-size: 25px;
+gap: 50px;
+margin-right:15%;
+text-decoration: none;
+}
+/* give color  height weidth to nav bar */
+header{
+    width: 100%;
+    height: 9%;
+    background-color:rgba(0, 0, 0, 0.938);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position:fixed;
+
+}
+header nav a{
+    color: white;
+text-decoration: none;
+padding: 10px 15px;
+}
+
+nav a:hover{
+    border-bottom: 3px solid rgb(120, 198, 243);
+border-bottom-left-radius: 20%;
+border-bottom-right-radius: 20%;
+padding-bottom: 6px;
+}
+/* -------------------------Section 1 start--------------------------------------------*/
+section{
+    width: 100%;
+    height: 100vh;
+
+}
+/* sbkuch section ke beech me laaane ke liye */
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://media.istockphoto.com/id/1360536528/photo/lit-candle-at-an-outdoor-table-of-a-restaurant-christmas-lights-on-the-background.webp?b=1&s=170667a&w=0&k=20&c=yA7qCcrxdBPzPXyrNtCijtcODP3tnr63yhrJLvSZu_c=);/*url('bgsec1.jpg');*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+}
+/* section1 paragraph postion ko centre krne ke liye */
+.LR{
+    font-family: 'Protest Riot', sans-serif;
+    height: 60%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+/* for set and edit Welcome text */
+ .p1{
+    position: relative;
+    color:rgb(247, 247, 247);
+    font-size: 50px;
+    margin-top:40px ;
+    margin-left: 56px;
+}
+/* for set one cup tea text*/
+  #cup{
+     position: relative;
+    color: white;
+    font-size:50px ;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#cup span{
+    color:rgb(245, 226, 142);
+}
+/*Cafe text */
+#cafe{
+position: relative;
+font-size: 50px;
+color: white;
+margin-left: 108px;
+margin-top:1px;
+}
+/* section1 buttons*/
+.btn{
+    margin-top:6px;
+    margin-left: 70px;  
+}
+.btn2{
+    font-size: 20px;
+    margin-top: 6px;
+    margin-left:5px;
+    padding: 5px 10px;
+    background-color:rgba(0, 0, 0, 0.836);
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+/* ----------------------------------Section 2 start----------------------------------------- */
+.sec2{
+    background-image: url(https://img.freepik.com/free-photo/cup-coffee-table-front-street-with-city-lights-background_188544-10293.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+
+}
+/* form box ,sizing,bg color */
+form{
+    font-family: 'Protest Riot', sans-serif;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #00000094;
+    border: 2px solid rgb(0, 0, 0);
+    height: 60%;
+    width: 20%;
+    padding: 5px;
+}
+::placeholder{
+    color: rgb(60, 122, 255);
+}
+/* common cLASS 4 INPUT BOX to size and margin */
+.f1{
+    position: relative;
+    cursor: pointer;
+    margin-left: 45px;
+    margin-top:8px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black ;
+    background-color: #d6b1b1;
+}
+/* top hading signup */
+#fh{
+    font-family: 'Protest Riot', sans-serif;
+    margin-left:57px;
+    font-size: 35px;
+    margin-top:3px;
+    color: burlywood;
+    cursor: pointer;
+}
+/* radio button  */
+#ra1{
+    margin-top: 2px;
+    margin-left:59px; 
+    font-size: 15px;
+}
+/* radio buton color */
+.ds{
+    color:white ;
+    padding: 10px;
+    cursor: pointer;
+}
+/* button1 to give margin for center both button */
+#btn1{
+    position: relative;
+    margin-left: 70px;
+}
+/*common class to butoon editing like size color */
+.btn1{
+        position: relative;
+        font-size:12px;
+        margin-top: 10px;
+        margin-left:10px;
+        padding: 5px 10px;
+        background-color:rgba(32, 6, 6, 0.836);
+        color: white;
+        border-radius: 6px;
+        border: 2px solid white;
+        cursor: pointer;   
+}
+/* give gap between buttons*/
+#btn2{
+    margin-left: 5px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/* Section 3 start*/
+.sec3{
+    background-image: url(https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1711584000&semt=ais);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer ;
+}
+/* comon class for create left and right box of veg non veg */
+.main3{
+    margin-top: 20px;
+    height: 450px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+.main3 :hover{
+    background-color: rgba(0, 0, 0, 0.938);
+}
+/* for give gap between both veg and non veg*/
+#left-main3{
+    margin-right: 90px;
+
+}
+/* edit vegetarian heading of left*/
+.veg{
+    font-size: 25px;
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.mainsnacks{
+    display: flex;
+}
+/* snack list of veg*/
+.snacks{
+    width: 150px;
+    padding: 10px;
+    margin-left: 53px;
+    margin-top: 8px;
+    color: azure;
+   /* background-color: rgb(67, 54, 180);*/
+}
+ul{
+    font-family: 'Protest Riot', sans-serif;
+}
+li{
+    color:#d6b1b1;
+    margin-top: 1px;
+    font-style: italic;
+}
+/*Snack heading */
+#snackhead{
+font-size: 27px;
+color: blanchedalmond;
+}
+/*List items of snacks */
+.sl{
+    font-size: 20px;
+     
+}
+.lb{
+    margin-top: 20px;
+}
+
+/* give gap between left and right*/
+#right-main3{
+    margin-left: 90px;
+}
+/*----------------------------section 4 start-------------------------------*/
+.sec4{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/030/656/371/non_2x/3d-model-coffee-shop-blue-and-fancy-free-photo.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+}
+/* contact page height set and all background properties */
+.con{
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(6, 24, 59, 0.212);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 80px rgb(236, 4, 198);
+    border-radius: 20px;
+    border-bottom: 2px solid rgb(90,160,209);
+    margin:auto;
+    margin-top: 6%;
+}
+.con:hover{
+    box-shadow: 0px 0px 80px rgb(93, 4, 236);
+    transform: translateY(-30px);
+    transition: transform 0.5s ;
+    background-color:rgba(222, 184, 135, 0.349);
+    
+    border-bottom: 4px solid rgba(209, 13, 209, 0.911);
+
+}
+.con h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0px;
+    border-bottom-left-radius: 23%;
+    border-bottom-right-radius: 23%;
+    border-bottom: 2px solid rgb(90,160,209);  
+}
+.con h4 span{
+    color:rgb(90,160,209) ;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.images img{
+    width: 6vw;
+    cursor: pointer;
+
+}
+.images img:hover{
+    transform: translateY(-22px);
+    transition:transform o.5s ;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+<header>
+<div id="logo"><img src="1cuptea.jpg"></div>
+<nav id="nav-bar">
+    <a href="#Home">Home</a>
+    <a href="#Sigin">Sigin</a>
+    <a href="#Menue">Menue</a>
+    <a href="#Contact">Contact us</a>
+    
+</nav>
+</header>
+<section class="sec1" id="Home">
+     <div class=" LR">
+        <p class="p1">Welcome To </p>
+        <p id="cup">ONE <span>CUP TEA</span></p>
+        <p id="cafe" >CAFE</p>
+        <div class="btn ">
+            <button class="btn2">Login</button>
+            <button class="btn2">Details</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec2" id="Sigin">
+    <form>
+        <h2 id="fh" class="">Sigin Form</h2>
+        <input type="text" placeholder="Full Name"  class="f1"><br><br>
+        <input type="number" placeholder="Phone Number" class="f1"><br><br>
+        <input type="email" placeholder="Email" class="f1"><br><br>
+        <input type="password" placeholder="Password" maxlength="8" class="f1"><br><br>
+        <input type="radio"id="ra1" > <span class="ds"> Male </span>
+        <input type="radio" > <span class="ds"  > Female </span>
+        <div id="lfb " class="">
+            <button class="btn1" id="btn1" >Submit</button>
+            <button class="btn1" id="btn2">Reset</button>
+        </div>
+    </form>
+    </Section>
+
+    
+    <section class="sec3" id="Menue">
+    <div class="main3" id="left-main3">
+        <p class="veg"> *Starter/Breakfast*</p>
+        <div class="mainsnacks">
+            <div class="snacks" >
+            <ul id="snackhead" type="square"> Snacks
+                <li class="sl">Samosa</li>
+                <li class="sl">Bread Pakoda</li>
+                <li class="sl">French Fries</li>
+                <li class="sl">Pnner Pakoda</li>
+                <li class="sl">Raj Kachori</li>
+            </ul>
+        </div>
+        <div class="snacks"  >
+            <ul id="snackhead" type="square"> Drinks
+                <li class="sl">Cold Drink</li>
+                <li class="sl">Cold Coffe</li>
+                <li class="sl">Hot Coffe</li>
+                <li class="sl">Juice</li>
+                <li class="sl">Soup</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mainsnacks lb">
+        <div class="snacks" >
+        <ul id="snackhead" type="square"> South Indian
+            <li class="sl">Dosa</li>
+            <li class="sl">Burger</li>
+            <li class="sl">Chowmin</li>
+            <li class="sl">Chilli Potato</li>
+            <li class="sl">Pav Bhaji</li>
+        </ul>
+    </div>
+    <div class="snacks"  >
+        <ul id="snackhead" type="square"> Ice Creame
+            <li class="sl">Choclate</li>
+            <li class="sl">Pine apple</li>
+            <li class="sl">Rasmlaayi</li>
+            <li class="sl">Strawberry</li>
+            <li class="sl">Cookie dough </li>
+        </ul>
+    </div>
+</div>
+    </div>
+
+    <div class="main3" id="right-main3">
+        <p class="veg"> *Lunch / Dinner*</p>
+        <div class="mainsnacks">
+            <div class="snacks" >
+            <ul id="snackhead" type="square"> Salid
+                <li class="sl">Tomato</li>
+                <li class="sl">Onnion</li>
+                <li class="sl">Cucumber</li>
+                <li class="sl">Raddis</li>
+                <li class="sl">Lemon</li>
+            </ul>
+        </div>
+        <div class="snacks"  >
+            <ul id="snackhead" type="square">Sabji
+                <li class="sl">Daal Makhhni</li>
+                <li class="sl">Matar Panner</li>
+                <li class="sl">Kadhaayi Paner</li>
+                <li class="sl">Raayta</li>
+                <li class="sl">Chhole</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mainsnacks lb">
+        <div class="snacks" >
+        <ul id="snackhead" type="square">Roti/Rice
+            <li class="sl">Plane Roti</li>
+            <li class="sl">Naan</li>
+            <li class="sl">Tandoori Roti</li>
+            <li class="sl">Plane Rice</li>
+            <li class="sl">Pulaaw</li>
+        </ul>
+    </div>
+    <div class="snacks"  >
+        <ul id="snackhead" type="square">Sweets
+            <li class="sl">Gulaab Jaamun</li>
+            <li class="sl">Strawbeery</li>
+            <li class="sl">Ras Mlai</li>
+            <li class="sl">Burfy</li>
+            <li class="sl">Imarti</li>
+        </ul>
+    </div>
+</div>
+    </div>
+</section>
+<section class="sec4" id="Contact">
+    <h4><p>.</p></h4>
+    <div class="con">
+        <h4>Contact Us <span>Directly</span></h4>
+        <div class="images">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram">
+            <img src="data:image/png;base64,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" alt="Facebook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAaVBMVEX///8AofYAn/YAnfYAmfUAm/UAl/UAlfX6/f/r9f7u9/72+//P6f1GqvZ2wfkAk/Xg8f7K5fzD4vxhuPi93Puc0frY7P1wvPhtuPis1fsopvaz2/uSzPqi0Pqm1vtfs/eGyPpLsPeAv/hvMsrvAAAE20lEQVR4nO3b2ZaiMBQFUMkEyCCDgAQU8P8/skBKq1TARGPCw91P3b3sZY6ZQ9hsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3+VGeR55pkuhQF6nTXDRtIljujSf8LLAQn8s3rrPH3Ij/QWT52QWRdYdTMOHOF7RbHUX7I0W73Pbekbw/q+xOdtwRzOFxRSSdLLN3akInsjS2/22Nc+NC5uiZqLlfVfHWrk0Xj1VLSPWl9/N9zVntP/b6UtFnhVjCx9l0jgLWfqmlpYFJ5f+hA/aR7hi+N5S4muPdCGLZSGCx5EB8fx7pZ7mBf1XI4k0FVrM8q+O4m+We1LML7+iVQqOaVEnGIYl439wNS4Pst/GgWuxL23FsiAyZkma5JulfxBev56GIi3ND4TCUD5M/XFo2Wed02ZxKxwJBOqmXu7913oJo7gOdgzRRut65vA3/SGSv6qcvJmZLR/TMDaMzijQOwgc/peOnV40ikooyi0S3+sJcXUXxqKpv1Q5zpFIZam0xRiF9x2a8uNCK3cLoS7zm8XSnWVTPxYBpdVs5eSik0wPWzoH5VHFH0tBeTFXDP/pw7MI178A2EQTEwfmqT/54US4YkihfWE2mGo5/S64mfphE9H+T6f20Bpk0782osHpaRJNRPs/kdpUqOPNNR1E7DTx7goVC6+YM0OnT+1826E2Kfaue0vkc8E0RHDZqpy32HYwI11bxnnkbr1N1AiGoa32Y5lfpxfdGmFCrK5oj2UpOs/Q0FSYTSEwSCFMKXk8KpsPUxgLE3USqxTBMCaG5rFr+4HiNDQ1EWbbXpYuseI0ZsJ4DeWn/oujVGkaQ32m389ghtKsklgQC4QxM5qNZwD94KsySz/PGJk0H/czisKYWQEk4lsUCUTmvFedrdhBmCSm+STj6vyNMNTANnPgi52EyeHTO9XvUzomj1Bn6sFstFMehmo9Yb4jsmiWY2rXPECqGxrSfvz3J1KcBnWm+v8gUZvGYJfpOXuucoDGR4NZ+jSJws0m4vpPme/lIVZVOfhgspVdbPedrajn1Kaz9Nw4ZQq2NSgwOZb94yXpx2lQajpF1bXZKWtT0fPXJaa7/8YPGCGEKhgDUGc6y8YRe8AvABuvmOHkTM1Qhs1XTK9WE8Y28vjvkfB1pUU0NJ1jFCvIgiwzzzKfVezjMLahU5kJ1acbaHJe0UX6avdRv8H6b2UuidAn0yYydFo2xztbb+86cWm69E/8IrDwO3mwmZP/F/L60HEk/DD2muXxtYa18Pwqq1O5LIc1v10SS4XRfLNUjtNKPbIl6Yqz7DupMY0ZeewvJkrlhmfb2E2Zl9xCbmRG7LTOl+ccz29suUUANnEZ8zXPzWsuGQWhtQzJt0tx3tbN/X0b2LLHZjgwdeXvkZNX5b5XlfU55RIXsG5RrPNKzvt6XtUwmwxHTO+cMWHamHnaP8fdN9L1MUKsK1fSW/5Eb52XIxasL8rATbqd3AkgZUHlrqqF/ePlBWOi1YPYLvVXMoTN8Kpu7hXfuyR9pWh/LfYd26obijuzLLv8O0+fr9SvV5wVXcD7YXdwec//8geL86BLs8W3nlbJiZJTfS4OzaBrmsOhONenZJVjlyhn60aD4dY8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADr8gO090FaX8cgjwAAAABJRU5ErkJggg==" alt="Twitter">
+            <img src="data:image/png;base64,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" alt="Linkedin">
+        </div>
+    </div>
+</section>
+    </div>
+</body>
+</html>
